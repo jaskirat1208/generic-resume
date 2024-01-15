@@ -8,24 +8,32 @@
 \def\email{loren.ipsum@gmail.com}
 \def\linkedin{linkedin.com/in/lorenipsum}
 \def\github{github.com/lorenipsum}
-\def\jasphone{+1 (911) 113-9126}
+\def\phone{+1 (911) 113-9126}
 
 % \def\jbegin{\begin{itemize}}
 % \def\jitem{\item }
 % \def\jend{\end{itemize}}
-\def\jbegin{\resumeItemListStart}
-\def\jitem{\resumeItem}
-\def\jend{\resumeItemListEnd}
+\def\jDescribeBegin{\begin{description}}
+\def\jDescribeEnd{\end{description}}
 
 \def\profileSummary{
 \section{Career summary so far}
 \blindtext
 }
 
+\def\skills{
+\jDescribeBegin
+    \item[Technical] List computer software and programming languages 
+    \item[Language] List foreign languages and your level of fluency
+    \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]
+    \item[Interests] List activities you enjoy that may spark interview conversation
+\jDescribeEnd
+
+}
 
 \def\achievements{
     \jbegin
-        \jitem{\lrand[1]}
+        \jitem {\lrand[1]}
         \jitem {\lrand[2]}
         \jitem {\lrand[1]}
         \jitem {\lrand[2]}
@@ -110,7 +118,6 @@
     \jitem{\lrand[7]}
 \jend
 }
-}
 
 
 \HckTemplate{HackCIMDGS}
@@ -123,7 +130,7 @@
 \jend}
 
 
-\HckTemplate{HackWInfy}
+\HckTemplate{HackWInfy} 
 {2019}
 {\lrand[1]}
 {\lrand[3]}
