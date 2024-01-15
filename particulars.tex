@@ -1,0 +1,161 @@
+\input{utilities}
+
+\def\firstname{Jaskirat}
+\def\lastname{Singh}
+\def\email{jaskiratsingh1208@gmail.com}
+\def\linkedin{linkedin.com/in/jaskirat-singh-1b1344126/}
+\def\github{github.com/jaskirat1208}
+\def\phone{+1 (782) 882-3674}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+\def\profileSummary{
+\section{Career summary so far}
+An experienced professional and a programming polyglot, incredibly passionate on writing clean code to deliver scalable, robust and performant production software. A diligent professional, with a passion for continuous improvement and test-driven design plus innovative, big-picture thinking grounded in real-world pragmatism. Proficient working with C++ and python. A team player, self starter able to work independently and have a precise attention to detail. Being from a computer science background, have in-depth knowledge of OOP, algorithms and operating systems which could potentially make a great asset to the team. 
+}
+
+
+\def\achievements{
+    \jbegin
+        \jitem{ AIR 328 in JEE Mains, AIR 185 in JEE Advanced 2015}
+        \jitem {AIR 176 in KVPY, a nationwide Olympiad conducted by Homi Bhabha Centre for Science Education 2013-14}
+        \jitem {Selected among top 300(approx) students for Physics, Chemistry and Mathematics Olympiads 2014-15.}
+        \jitem {Cleared National Talent Search examination, one of India's most prestigious examinations at high school level.}
+    \jend
+}
+
+% # Add education item here
+\EducationTemplate{College}
+{Jul 2015}{Dec 2018}{Indian Institute of Technology, Kanpur}
+{Bachelor of Technology}
+{Computer Sience and Engineering}
+
+\ExpTemplate{RBCCM}
+{Nov 2022}
+{Present}
+{Associate Director, PRISM Trading Services}
+{RBC Capital Markets}
+{Halifax, Nova Scotia, Canada}
+{
+\jbegin
+    \jitem{Own, enhance and maintain the end-to-end regression-test automation workflow in PRISM trading team, including market data, OMS and web-interfaces.}
+    \jitem{Designed and developed an in-house exchange simulator for accomodate test orderflows.}
+    \jitem{Contributed to development of different components of equities trading platform, OMS in particular.}
+    \jitem{Provided helping hands in migrating legacy codebase comprising approx 20k lines of python2 to python3, and mysql to mariadb database migration. Process involved doing a scan of the cpp and python codebase and figure out the possible impact and issues during the migration.}
+\jend
+}
+
+
+\ExpTemplate{DivPF}
+{June 2021}
+{Oct 2022}
+{Senior Software Engineer}
+{Divya Portfolio}
+{Gurgaon, India}
+{
+\jbegin
+    \jitem{Designed and Developed an interface to view trades and the Pnl in real time using APIs provided by the exchange.}
+    \jitem{Designed and developed a latency sensitive margin-calculation library for transactions in real time and integrated it in trade viewing platform.} 
+    \jitem{Simulating live round trip times in an orderflow inside a simulator. Involved scheduling jobs to profile the current rtts and exposing APIs to use this profile by the simulator.}
+    \jitem{Minor feature enhancements to the trading platform, so as to comply with the latest standards as specified by the exchange as well as to enhance the maintainability of the project.}
+\jend
+}
+
+\ExpTemplate{GS}
+{May 2019}
+{Jan 2021}
+{Analyst}
+{Goldman Sachs}
+{Bangalore, India}
+{
+    \begin{itemize}
+        \item Developed calculators, visualization tools and reports for Wealth and Estate planning strategies like GRATs, Sale and Gift to Grantor trust, and showing asset breakouts once the client decides to invest.
+        \item Contributed to a cross divisional tool(javascript frontend, slang backend) on top of which strategists could create web based visualizations for business by using Slang, our internal language of development.
+        \item Some infra related enhancements including health-check monitoring application for servers supported by the team and their corresponding host machines, migration of legacy react code to run using the latest libraries.
+    \end{itemize}
+}
+
+\ExpTemplate{Rivigo}
+{Jan 2019}
+{May 2019}
+{Intern, Software Development Engineer}
+{Rivigo}
+{Gurgaon, India}
+{
+\jbegin
+    \jitem{Contributed to an engine that recommends location and vehicle type parameters on the basis of scores computed.}
+    \jitem{The scoring done via factors like third party quote price, the demand price of the client, no of supply and demand quotes, etc. Higher scores given to the team with wider demand supply gaps.}
+\jend
+}
+
+\ExpTemplate{Amex}
+{May 2018}
+{July 2018}
+{University Partner}
+{American Express}
+{Bangalore, India}
+{
+\jbegin
+    \jitem{Problem: Optimizing operational cost for distributed deep learning based models in cloud.}
+    \jitem{An attempt to benchmark and predict the running times and resource utilization for various deep learning based models, and a Django based dashboard to display the orchestrated results.}
+\jend
+}
+
+
+\HckTemplate{HackCIMDGS}
+{2019}
+{Goldman Sachs Firmwide Global CIMD Hackathon}
+{Global winners}
+{\jbegin
+    \jitem{Designed a POC for a chatbot to be used for answering automated business queries like yield curves, portfolio manager for account, etc. }
+    \jitem{ Key features: Contextual understanding, yield curve visualizations, closest correlating bonds, fallback to web search if not found.}
+\jend}
+
+
+\HckTemplate{HackWInfy}
+{2019}
+{HackWithInfy}
+{Second Runners up}
+{\jbegin
+    \jitem {As a team, built a garbage van tracking system using free trial version of Google maps.}
+    \jitem{ Key features: admin portal, driver and customer portal, live van tracking, push notifications.}
+    \jitem{ As a team of five, earned a third place across the country after acing the preliminary algorithmic rounds.}
+\jend}
+
+\HckTemplate{i3wm}
+{}
+{Conky-based I3WM desktop rice template}
+{Easy to setup}
+{\jbegin
+    \item{Problem: Keeping a track of windows is hard in a Unix based system. While working on some code base, you might have atleast 7-8 windows open. Some of them may include browsers, text editors, mysqlworkbench, chatting interfaces(thunderbird, slack). You never know which one might be used anywhere. Alt + tab is okay, but navigating it might be a headache after a while.}
+    \item {I3WM(a tiling based window manager) is a really awesome solution to this problem. However, it is not very easy to setup and it looks very dirty in its raw state. So, there is a need for something intermediate, which can help window management easier, while not having a high setup cost. }
+    \item {Its boring to say about it here, have a look at my github repository i3-conky-desktop.}
+\jend}
+
+\HckTemplate{TrdSigGen}
+{}
+{Trading Signal Generator}
+{Implemented in C++}
+{\jbegin
+    \jitem{An implementation of Moving average crossover strategy for trading and a simple platform that supports it.}
+    \jitem{Each module is separately written. Custom strategies can be written just by flipping the switch and rebuilding it. Can support complex strategies too, although at this stage there is no means to fire orders.}
+\jend}
+% \DefineArrayVar{Education}{@}
+% {,}{School, Course, Stream, Start, End}
+% {,}{C,D}
+
+
+% % # Add experience item here
+
+
+
+
+% \renewcommand{addEducation}{}
+
+
+% # Add projects here
