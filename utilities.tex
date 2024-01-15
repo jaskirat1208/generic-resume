@@ -24,3 +24,7 @@
 
 \def\sett#1#2#3{\expandafter\def\csname#1#2\endcsname{#3}}
 % \def\appnd#1#2#3{\expandafter\def\csname#1#2\endcsname{#3}}
+
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
